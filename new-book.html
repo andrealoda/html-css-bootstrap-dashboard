@@ -55,69 +55,63 @@
             <div class="title">
                 <h1 class="h3">Nuovo libro</h1>
             </div>
-            <form>
-                <div class="row">
-                    <div class="mb-3 col-6">
-                        <label for="author-name" class="form-label">Nome autore</label>
-                        <input type="text" class="form-control" id="author-name" aria-describedby="emailHelp"
-                            placeholder="Inserisci il nome dell'autore">
-                    </div>
-                    <div class="mb-3 col-6">
-                        <label for="author-last-name" class="form-label">Cognome autore</label>
-                        <input type="text" class="form-control" id="author-last-name"
-                            placeholder="Inserisci il cognome dell'autore">
+            <form class="row g-3">
+
+
+                <div class="col-6">
+                    <label for="author-name" class="form-label">Nome autore</label>
+                    <input type="text" class="form-control" id="author-name" aria-describedby="emailHelp"
+                        placeholder="Inserisci il nome dell'autore">
+                </div>
+                <div class="col-6">
+                    <label for="author-last-name" class="form-label">Cognome autore</label>
+                    <input type="text" class="form-control" id="author-last-name"
+                        placeholder="Inserisci il cognome dell'autore">
+                </div>
+
+                <div class="col-12">
+                    <label for="titolo" class="form-label">Titolo</label>
+                    <input type="text" class="form-control" id="titolo" placeholder="Inserisci il titolo del libro">
+                    <div id="titolo" class="form-text">Titolo versione italiana</div>
+                </div>
+
+                <div class="col-lg-4">
+                    <label class="form-label">Genere</label>
+                    <select class="form-select" id="autoSizingSelect">
+                        <option selected>Scegli il genere</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                    </select>
+                </div>
+                <div class="col-lg-4">
+                    <label for="author-last-name" class="form-label">Anno di Pubblicazione</label>
+                    <input type="text" class="form-control" id="author-last-name" placeholder="Inserisci l'anno">
+                </div>
+                <div class="col-lg-4">
+                    <label for="author-last-name" class="form-label">ISBN#</label>
+                    <input type="text" class="form-control" id="author-last-name"
+                        placeholder="Inserisci il codice ISBN#">
+                </div>
+
+                <div class="col-12">
+                    <hr>
+                    <label for="titolo" class="form-label">Note</label>
+                    <input type="text" class="form-control" id="titolo"
+                        placeholder="Inserisci eventuali note sul libro"">
+                </div>
+
+                <div class="col-12">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="gridCheck">
+                        <label class="form-check-label" for="gridCheck">
+                            Disponibile anche in digitale
+                        </label>
                     </div>
                 </div>
-                <!-- /.row -->
-
-                <div class="row">
-                    <div class="mb-3 col">
-                        <label for="titolo" class="form-label">Titolo</label>
-                        <input type="text" class="form-control" id="titolo" placeholder="Inserisci il titolo del libro">
-                        <div id="titolo" class="form-text">Titolo versione italiana</div>
-                    </div>
+                <div class="col-12">
+                    <button type="submit" class="btn btn-primary">Aggiungi libro</button>
                 </div>
-                <!-- /.row -->
-
-                <div class="row">
-                    <div class="mb-3 col-lg-4">
-                        <label class="form-label">Genere</label>
-                        <select class="form-select" id="autoSizingSelect">
-                            <option selected>Scegli il genere</option>
-                            <option value="1">One</option>
-                            <option value="2">Two</option>
-                            <option value="3">Three</option>
-                        </select>
-                    </div>
-                    <div class="mb-3 col-lg-4">
-                        <label for="author-last-name" class="form-label">Anno di Pubblicazione</label>
-                        <input type="text" class="form-control" id="author-last-name" placeholder="Inserisci l'anno">
-                    </div>
-                    <div class="mb-3 col-lg-4">
-                        <label for="author-last-name" class="form-label">ISBN#</label>
-                        <input type="text" class="form-control" id="author-last-name"
-                            placeholder="Inserisci il codice ISBN#">
-                    </div>
-                </div>
-                <!-- /.row -->
-                <hr>
-
-                <div class="row">
-                    <div class="mb-3 col">
-                        <label for="titolo" class="form-label">Note</label>
-                        <input type="text" class="form-control" id="titolo"
-                            placeholder="Inserisci eventuali note sul libro">
-                    </div>
-
-                </div>
-                <!-- /.row -->
-
-
-                <div class="mb-3 form-check">
-                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                    <label class="form-check-label" for="exampleCheck1">Disponibile anche in digitale</label>
-                </div>
-                <button type="submit" class="btn btn-primary">Aggiungi Libro</button>
             </form>
         </div>
     </main>
